@@ -1,4 +1,3 @@
-import React from "react";
 
 const ModalDelete = ({ show, onCancel, onConfirm }) => {
   if (!show) return null;

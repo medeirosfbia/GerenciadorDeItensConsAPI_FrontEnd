@@ -132,7 +132,7 @@ function UpdateItem() {
                     onClick={handleClick}>Alterar</button>
             </form>
             <div className='d-flex justify-content-center mt-3'>
-                <Link to="/items" className="btn btn-outline-secondary">
+                <Link to="/" className="btn btn-outline-secondary">
                     Veja todos os itens
                 </Link>
             </div>

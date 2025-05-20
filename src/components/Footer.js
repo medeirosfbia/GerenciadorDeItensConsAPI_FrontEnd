@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Footer = () => (
   <footer className="navbar navbar-expand navbar-dark bg-dark mt-4">

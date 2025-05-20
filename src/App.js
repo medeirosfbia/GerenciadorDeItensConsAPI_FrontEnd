@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListItems from './components/Items/ListItems';
@@ -25,7 +24,6 @@ function App() {
       <Route path="/readItem/:id" element={<ReadItem />} />
       <Route path="/updateItem/:id" element={<UpdateItem />} />
       <Route path="/items/category/:id" element={<ListItemsByCategory />} />
-      <Route path="*" element={<h1>404 - Not Found</h1>} />
       <Route path="/categories" element={<ListCategories />} />
       <Route path='/addCategory' element={<AddCategory />} />
       <Route path="/readCategory/:id" element={<ReadCategory />} />

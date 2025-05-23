@@ -15,9 +15,10 @@ const NavCategories = ({ onSelectCategory, selectedCategory }) => {
   }, []);
 
   return (
-    <div className="mb-3">
+    <div className="mb-3" style={{ overflowX: 'auto', whiteSpace: 'nowrap', paddingBottom: 8 }}>
       <button
-        className={`btn mx-1 ${!selectedCategory ? 'btn-primary' : 'btn-outline-primary'}`}
+        className={`btn mx-1 ${!selectedCategory ? 'btn-primary' : 'btn-outline-secondary'}`}
+        style={{ minWidth: 120, marginBottom: 4, borderRadius: 18, fontWeight: 600 }}
         onClick={() => onSelectCategory(null)}
       >
         Todas
@@ -25,7 +26,8 @@ const NavCategories = ({ onSelectCategory, selectedCategory }) => {
       {categories.map(cat => (
         <button
           key={cat.id}
-          className={`btn mx-1 ${selectedCategory === cat.id ? 'btn-primary' : 'btn-outline-primary'}`}
+          className={`btn mx-1 ${selectedCategory === cat.id ? 'btn-primary' : 'btn-outline-secondary'}`}
+          style={{ minWidth: 120, marginBottom: 4, borderRadius: 18, fontWeight: 600 }}
           onClick={() => onSelectCategory(cat.id)}
         >
           {cat.nome || cat.name}
